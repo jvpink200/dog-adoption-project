@@ -3,39 +3,24 @@
     height:280px;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 48px 0 0 0;
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
 }
 
-@media (max-width: 767.98px) {
-    .sidebar {
-      top: 5rem;
-    }
-  }
-  
-  .sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: .5rem;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
-  
-  @supports ((position: -webkit-sticky) or (position: sticky)) {
-    .sidebar-sticky {
-      position: -webkit-sticky;
-      position: sticky;
-    }
-  }
-  
-  .sidebar .nav-link.active {
-    color: #007bff;
-  }
+.paragraph {
+    outline: 1px solid #13a3b8;
+    padding: 15px;
+}
 
-  
+.border {
+    border-width:3px !important;
+}
+
+#quizBorder {
+    text-align: center;
+    border-width:5px !important;
+    vertical-align: middle;
+}
