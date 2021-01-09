@@ -1,6 +1,10 @@
+body {
+  font-size: 1rem;
+}
+
 .buy-items {
   width: auto;
-  height: 280px;
+  height: 260px;
 }
 
 .card {
@@ -25,17 +29,18 @@
   vertical-align: middle;
 }
 
-/*
+ /*
  * Sidebar
  */
 
- .sidebar {
+.sidebar {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
+  text-align: center;
   z-index: 100; /* Behind the navbar */
-  padding-top: 48px;
+  padding-top: 60px; /* Height of navbar */
 }
 
 @media (max-width: 767.98px) {
@@ -60,16 +65,11 @@
   }
 }
 
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999;
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
 }
 
 .sidebar .nav-link.active {
   color: #007bff;
-}
-
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-  color: inherit;
 }
