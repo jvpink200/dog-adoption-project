@@ -1,26 +1,26 @@
-.buy-items{
-    width:auto;
-    height:280px;
+.buy-items {
+  width: auto;
+  height: 280px;
 }
 
 .card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    box-shadow: 10px 10px rgba(0,0,0,0.2);
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .paragraph {
-    outline: 1px solid #13a3b8;
-    padding: 15px;
+  outline: 1px solid #13a3b8;
+  padding: 15px;
 }
 
 .border {
-    border-width:3px !important;
+  border-width: 3px !important;
 }
 
 #quizBorder {
-    text-align: center;
-    border-width:5px !important;
-    vertical-align: middle;
+  text-align: center;
+  border-width: 5px !important;
+  vertical-align: middle;
 }
