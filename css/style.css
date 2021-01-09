@@ -29,7 +29,7 @@ body {
   vertical-align: middle;
 }
 
- /*
+/*
  * Sidebar
  */
 
@@ -41,6 +41,7 @@ body {
   text-align: center;
   z-index: 100; /* Behind the navbar */
   padding-top: 60px; /* Height of navbar */
+  width: fit-content;
 }
 
 @media (max-width: 767.98px) {
@@ -72,4 +73,8 @@ body {
 
 .sidebar .nav-link.active {
   color: #007bff;
+}
+
+#questionsForm {
+  margin-left: 5%;
 }
