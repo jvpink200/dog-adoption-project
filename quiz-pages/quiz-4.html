@@ -17,7 +17,7 @@
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info">
       <div class="container">
-        <a class="navbar-brand" href="../index.html"
+        <a class="navbar-brand" href="/index.html"
           ><img src="/images/dog_logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"
         /></a>
         <button
@@ -29,18 +29,18 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMain">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-lg-none" href="../aboutus.html">About Us <span class="sr-only">(current)</span></a>
+              <a class="nav-link d-lg-none" href="aboutus.html">About Us <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item d-lg-none">
-              <a class="nav-link" href="#">Dog Quiz <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="quiz-1.html">Dog Quiz <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <form class="form-inline my-lg-0">
@@ -49,25 +49,24 @@
           </form>
         </div>
       </div>
-      <h2>4/6</h2>
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <!-- <div class="col-sm-2 d-none d-sm-block bg-dark"></div> -->
+        <div class="col-md-2 d-none d-md-block bg-dark"></div>
         <!--SideBar-->
-        <nav id="sidebarMenu" class="col-sm-2 col-md-2 d-none d-lg-block sidebar bg-dark collapse">
+        <nav id="sidebarMenu" class="col-md-2 d-none d-lg-block sidebar bg-dark collapse">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-white" href="../aboutus.html"> About Us </a>
+                <a class="nav-link text-info" href="/aboutus.html"> About US </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#"> Dog Quiz </a>
+                <a class="nav-link text-info" href="quiz-1.html"> Dog Quiz </a>
               </li>
             </ul>
           </div>
         </nav>
-        <main role="main" class="col-md-10 ml-md-auto px-md-0">
+      <main role="main" class="col-md-10 ml-md-auto px-md-0">
       </div>
       <!--Quiz-->
       <div class="col-md-12 mx-auto mt-5 p-3">
@@ -106,7 +105,6 @@
                 <label for="answer3" class="col-form-label">Apartment</label>
               </div>
             </div>
-
             <div class="form-group row mx-auto mb-5">
               <div class="col col-2 pl-5">
                 <input class="form-control" type="radio" name="answer" id="answer4" />
@@ -131,18 +129,32 @@
                 <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-6.html">6</a></li>
                 <li class="page-item">
                   <a class="page-link" href="/quiz-pages/quiz-5.html" aria-label="Next">
+                <label for="answer4" class="col-form-label">Lays in Bed All Day</label>
+              </div>
+            </div>
+    
+            <nav class="row mx-auto" aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item pl-5">
+                  <a class="page-link" href="quiz-3.html" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="quiz-1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="quiz-2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="quiz-3.html">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="quiz-5.html" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                   </a>
                 </li>
               </ul>
             </nav>
-        </form>
+          </form>
         </main>
-        <!-- Right side grey bar -->
-        <div class="col-md-1 d-none d-md-block bg-dark"></div>
-        </div>
+        <div class="col-md-2"></div>
       </div>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    </div>
     <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>

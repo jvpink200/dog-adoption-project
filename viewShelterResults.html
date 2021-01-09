@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aero Swift Adoption</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/dog_logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="aboutus.html">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="quiz-pages/quiz-1.html">Dog Quiz <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 d-none d-sm-block bg-dark"></div>
+        <!--SideBar-->
+        <nav id="sidebarMenu" class="col-md-2 d-none d-lg-block sidebar bg-dark collapse">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="aboutus.html"> About US </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="quiz-pages/quiz-1.html"> Dog Quiz </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main role="main" class="col-md-8 px-md-0">
+            <div class="row mt-5 p-3">
+                <div class="col"></div>
+                <div class="col-md-8">
+                    <form class="form-inline my-lg-0">
+                        <select class="form-control mr-sm-2" id="chooseShelter">
+                          <option selected>Select a Shelter...</option>
+                          <option value="Riverside">Riverside, CA</option>
+                          <option value="Corona">Corona, CA</option>
+                          <option value="Irvine">Irvine, CA</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-8" id="shelterImage">
+                    <img id="riversideShelter" class="col-md-12 p-2" src="images/RiversideShelter.jpg"></img>
+                    <img id="coronaShelter" class="col-md-12 p-2" src="images/coronaShelter.jpg"></img>
+                    <img id="irvineShelter" class="col-md-12 p-2" src="images/irvineShelter.jpg"></img>
+                </div>
+                <div class="col"></div>
+            </div>
+        </main>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/selectShelter.js"></script>
+  </body>
+</html>
