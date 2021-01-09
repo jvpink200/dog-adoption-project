@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Aero Swift Adoption</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="/images/dog_logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMain"
+          aria-controls="navbarMain"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="../aboutus.html">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#">Dog Quiz <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Choose a Shelter" />
+            <button class="btn btn-light my-2 my-sm-0" id="search" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <h2>4/6</h2>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- <div class="col-sm-2 d-none d-sm-block bg-dark"></div> -->
+        <!--SideBar-->
+        <nav id="sidebarMenu" class="col-sm-2 col-md-2 d-none d-lg-block sidebar bg-dark collapse">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../aboutus.html"> About Us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"> Dog Quiz </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main role="main" class="col-md-10 ml-md-auto px-md-0">
+      </div>
+      <!--Quiz-->
+      <div class="col-md-12 mx-auto mt-5 p-3">
+        <h1 class="text-info text-center">- Dog Breed Quiz -</h1>
+      </div>
+      <div class="row row-content mb-5">
+        <div id="quizBorder" class="col col-6 border border-info rounded mx-auto">
+          <h2>#4 What kind of home do you live in?</h2>
+        </div>
+      </div>
+      <!-- Questions -->
+        <form id="questionsForm">
+            <div class="form-group row mx-auto mb-5">
+              <div class="col col-md-2 pl-5">
+                <input class="form-control" type="radio" name="answer" id="answer1" />
+              </div>
+              <div for="answer1" class="col col-md-8 border border-success rounded">
+                <label for="answer1" class="col-form-label">House</label>
+              </div>
+            </div>
+
+            <div class="form-group row mx-auto mb-5">
+              <div class="col col-md-2 pl-5">
+                <input class="form-control" type="radio" name="answer" id="answer2" />
+              </div>
+              <div class="col col-md-8 border border-warning rounded">
+                <label for="answer2" class="col-form-label">Townhouse</label>
+              </div>
+            </div>
+
+            <div class="form-group row mx-auto mb-5">
+              <div class="col col-md-2 pl-5">
+                <input class="form-control" type="radio" name="answer" id="answer3" />
+              </div>
+              <div class="col col-md-8 border border-danger rounded">
+                <label for="answer3" class="col-form-label">Apartment</label>
+              </div>
+            </div>
+
+            <div class="form-group row mx-auto mb-5">
+              <div class="col col-2 pl-5">
+                <input class="form-control" type="radio" name="answer" id="answer4" />
+              </div>
+              <div class="col col-8 border border-primary rounded">
+                <label for="answer4" class="col-form-label">Mobile Home</label>
+              </div>
+            </div>
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="/quiz-pages/quiz-3.html" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-5.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-6.html">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="/quiz-pages/quiz-5.html" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        </form>
+        </main>
+        <!-- Right side grey bar -->
+        <div class="col-md-1 d-none d-md-block bg-dark"></div>
+        </div>
+      </div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
