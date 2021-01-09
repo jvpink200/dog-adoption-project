@@ -43,8 +43,14 @@
             </li>
           </ul>
           <form class="form-inline my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Choose a Shelter" />
-            <button class="btn btn-light my-2 my-sm-0" id="search" type="submit">Search</button>
+            <select class="form-control mr-sm-2" id="chooseShelter">
+              <option selected>Select a Shelter...</option>
+              <option>Riverside, CA</option>
+              <option>Pomona, CA</option>
+              <option>Corona, CA</option>
+              <option>Irvine, CA</option>
+            </select>
+            <button class="btn btn-light my-2 my-sm-0" id="shelter" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -136,6 +142,7 @@
               <img class="buy-items d-block w-100 p-2" src="images/dog_house.jpg" alt="dog house" />
             </div>
             <div class="col"></div>
+          </div>
           <!--End Dog Item Images-->
         </main>
         <div class="col-md-2 d-none d-md-block bg-dark"></div>
