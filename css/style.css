@@ -15,8 +15,9 @@ body {
 }
 
 .paragraph {
-  outline: 1px solid #13a3b8;
+  outline: 3px inset #13a3b8;
   padding: 15px;
+  font-size: large;
 }
 
 .border {
@@ -29,7 +30,7 @@ body {
   vertical-align: middle;
 }
 
- /*
+/*
  * Sidebar
  */
 
@@ -41,6 +42,7 @@ body {
   text-align: center;
   z-index: 100; /* Behind the navbar */
   padding-top: 60px; /* Height of navbar */
+  width: fit-content;
 }
 
 @media (max-width: 767.98px) {
@@ -72,4 +74,34 @@ body {
 
 .sidebar .nav-link.active {
   color: #007bff;
+}
+
+#questionsForm {
+  margin-left: 5%;
+}
+
+#randomDog {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+  color: #13a3b8;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#dogImage {
+  width: 50%;
+  height: auto;
+  padding: 1px;
+  border: 3px outset #13abb8;
+  background-color: #13a3b8;
 }

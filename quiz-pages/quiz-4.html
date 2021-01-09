@@ -66,49 +66,69 @@
             </ul>
           </div>
         </nav>
-        <main role="main" class="col-md-8">
-          <div class="col-md-6 mx-auto mt-5 p-3">
-            <h1 class="text-info text-center">- Dog Breed Quiz -</h1>
-          </div>
-          <div class="row row-content mb-5">
-            <div id="quizBorder" class="col col-6 border border-info rounded mx-auto">
-              <h2>#1 What's your activity Level ?</h2>
-            </div>
-          </div>
-          <!--Form-->
-          <form>
+      <main role="main" class="col-md-10 ml-md-auto px-md-0">
+      </div>
+      <!--Quiz-->
+      <div class="col-md-12 mx-auto mt-5 p-3">
+        <h1 class="text-info text-center">- Dog Breed Quiz -</h1>
+      </div>
+      <div class="row row-content mb-5">
+        <div id="quizBorder" class="col col-6 border border-info rounded mx-auto">
+          <h2>#4 What kind of home do you live in?</h2>
+        </div>
+      </div>
+      <!-- Questions -->
+        <form id="questionsForm">
             <div class="form-group row mx-auto mb-5">
-              <div class="col col-2 pl-5">
+              <div class="col col-md-2 pl-5">
                 <input class="form-control" type="radio" name="answer" id="answer1" />
               </div>
-              <div for="answer1" class="col col-8 border border-success rounded">
-                <label for="answer1" class="col-form-label">Very Active</label>
+              <div for="answer1" class="col col-md-8 border border-success rounded">
+                <label for="answer1" class="col-form-label">House</label>
               </div>
             </div>
-    
+
             <div class="form-group row mx-auto mb-5">
-              <div class="col col-2 pl-5">
+              <div class="col col-md-2 pl-5">
                 <input class="form-control" type="radio" name="answer" id="answer2" />
               </div>
-              <div class="col col-8 border border-warning rounded">
-                <label for="answer2" class="col-form-label">Somewhat Active</label>
+              <div class="col col-md-8 border border-warning rounded">
+                <label for="answer2" class="col-form-label">Townhouse</label>
               </div>
             </div>
-    
+
             <div class="form-group row mx-auto mb-5">
-              <div class="col col-2 pl-5">
+              <div class="col col-md-2 pl-5">
                 <input class="form-control" type="radio" name="answer" id="answer3" />
               </div>
-              <div class="col col-8 border border-danger rounded">
-                <label for="answer3" class="col-form-label">Sedentary</label>
+              <div class="col col-md-8 border border-danger rounded">
+                <label for="answer3" class="col-form-label">Apartment</label>
               </div>
             </div>
-    
             <div class="form-group row mx-auto mb-5">
               <div class="col col-2 pl-5">
                 <input class="form-control" type="radio" name="answer" id="answer4" />
               </div>
               <div class="col col-8 border border-primary rounded">
+                <label for="answer4" class="col-form-label">Mobile Home</label>
+              </div>
+            </div>
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="/quiz-pages/quiz-3.html" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-5.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="/quiz-pages/quiz-6.html">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="/quiz-pages/quiz-5.html" aria-label="Next">
                 <label for="answer4" class="col-form-label">Lays in Bed All Day</label>
               </div>
             </div>
@@ -135,7 +155,6 @@
         <div class="col-md-2"></div>
       </div>
     </div>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
