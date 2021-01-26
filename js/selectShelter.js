@@ -3,7 +3,7 @@ $(function() {
     $("#coronaShelter").hide();
     $("#irvineShelter").hide();
     $("#chooseShelter").change(function(){
-        var shelterLocation = $(this).children("option:selected").val();
+        let shelterLocation = $(this).children("option:selected").val();
         switch(shelterLocation){
             case 'Riverside': $("#riversideShelter").show();
                 break;
